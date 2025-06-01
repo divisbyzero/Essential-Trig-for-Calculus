@@ -6,8 +6,7 @@
 `# macOS system files
 .DS_Store
 
-# Final PDF output
-TrigCheatSheet.pdf
+
 
 
 ### TeX ###
