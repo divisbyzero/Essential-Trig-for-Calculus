@@ -4,19 +4,19 @@ A quick-reference trigonometry guide for calculus students, created using LaTeX 
 
 ## Files
 
-- `TrigCheatSheet.tex`: The LaTeX source code  
-- `TrigCheatSheet.pdf`: Precompiled PDF for easy viewing  
+- `EssentialTrigForCalculus.tex`: The LaTeX source code  
+- `EssentialTrigForCalculus.pdf`: Precompiled PDF for easy viewing  
 - `images/`: Folder containing supporting image files (e.g., PNG previews, TikZ-generated figures)  
 
 ## Preview
 
 <p align="center">
-  <img src="images/TrigCheatSheet1.png" alt="Trig Cheat Sheet Page 1" width="45%">
-  <img src="images/TrigCheatSheet2.png" alt="Trig Cheat Sheet Page 2" width="45%">
+  <img src="images/EssentialTrigForCalculus1.png" alt="Essential Trigonometry for Calculus Page 1" width="45%">
+  <img src="images/EssentialTrigForCalculus2.png" alt="Essential Trigonometry for Calculus Page 2" width="45%">
 </p>
 
 <p align="center">
-  <img src="images/TrigCheatSheet3.png" alt="Trig Cheat Sheet Page 3" width="45%">
+  <img src="images/EssentialTrigForCalculus3.png" alt="Essential Trigonometry for Calculus Page 3" width="45%">
 </p>
 
 ## License
