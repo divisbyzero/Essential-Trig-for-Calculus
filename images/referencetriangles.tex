@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+
+%%%%%
+%% 45-45-90
+%%%%%
+\draw[blue, thick] (0,3) -- (3,3) node[midway,below, black] {$1$} -- (3,6) node[midway,right, black] {$1$}-- cycle node[midway,above left, black] {$\sqrt{2}$};
+
+\coordinate (D) at (0,3);
+\coordinate (E) at (3,3);
+\coordinate (F) at (3,6);
+
+\draw pic[draw,black,"{$\frac{\pi}{4}$}", angle eccentricity=2]{angle= D--F--E};
+%\draw pic[draw,black]{right angle= D--E--F};
+\draw pic[draw,black,"{$\frac{\pi}{4}$}", angle eccentricity=2]{angle= E--D--F};
+
+%%%%%
+%% 30-60-90
+%%%%%
+\draw[blue, thick]  (0,0) -- ({5*cos(30)},0) node[midway,below, black] {$\sqrt{3}$} -- ({5*cos(30)},{5*sin(30)}) node[midway,right, black] {$1$}-- cycle node[midway,above left, black] {$2$};
+
+\coordinate (A) at (0,0);
+\coordinate (B) at ({5*cos(30)},0);
+\coordinate (C) at ({5*cos(30)},{5*sin(30)});
+
+
+\draw pic[draw,black,"{$\frac{\pi}{3}$}", angle eccentricity=2]{angle= A--C--B};
+%\draw pic[draw,black]{right angle = C--B--A};
+\draw pic[draw,black,"{$\frac{\pi}{6}$}", angle eccentricity=3]{angle= B--A--C};
+
+\end{tikzpicture}

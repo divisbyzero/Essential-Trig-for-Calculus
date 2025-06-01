@@ -1,0 +1,32 @@
+{
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": [
+        "latexmk"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-shell-escape",
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-synctex=1",
+        "-bibtex",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    }
+  ],
+  //"latex-workshop.latex.rootFile.useSubFile": false,
+  //"latex-workshop.latex.rootFile.doNotPrompt": true,
+  // 🔧 Optional overrides for this project—uncomment to enable:
+  // "latex-workshop.latex.autoBuild.run": "onSave",
+  // "latex-workshop.latex.autoClean.run": "onBuilt",
+  // "files.autoSave": "afterDelay",
+  // "files.autoSaveDelay": 3000
+}

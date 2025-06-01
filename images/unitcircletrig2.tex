@@ -1,0 +1,61 @@
+\begin{tikzpicture}
+\begin{axis}[
+	width=5in,
+	axis lines=middle,
+	xmin=-1.75,
+	xmax=1.75,
+	ymin=-1.5,
+	ymax=1.5,
+	xlabel=$x$, 
+	ylabel=$y$, 
+    xtick={-1,1},
+    ytick={-1,1},
+	unit vector ratio={1 1},
+]
+\addplot[ % This is the parametric curve
+	very thick,
+	variable=\t, % t is the parameter
+	domain=0:2*pi, % this is the domain of the parametric curve
+    samples = 100,
+    samples y=0,%prevents the starting and ending points from being joined by a line
+	color=blue,
+]
+({cos(deg(t))},{sin(deg(t))});
+
+\draw[line width=2pt,red](axis cs: 0,0)--(axis cs: {cos(30)},{sin(30)}) node[midway,above,black]{$1$}; %r(t)
+\draw[line width=2pt,red](axis cs: 0,0)--(axis cs: {cos(30)},0) node[midway, below, black]{$\cos  \theta$};
+\draw[line width=2pt,red](axis cs: {cos(30)},0)--(axis cs: {cos(30)},{sin(30)}) node[midway, left, black]{$\sin  \theta$};
+
+\coordinate (O) at (axis cs: 0,0);
+\coordinate (A) at (axis cs: {cos(30)},{sin(30)});
+\coordinate (B) at (axis cs: {cos(30)},0);
+
+\draw pic[draw,thick,black,"$\theta$", angle eccentricity=2.5]{angle= B--O--A};
+%\draw pic[draw,black]{right angle= A--B--O};
+
+\node[label=right:${(\cos \theta,\sin \theta)}$] (E) at (axis cs: {cos(30)},{sin(30)}) {};
+\draw [fill=black] (E) circle (2.5pt);
+
+\node[label=right:${x^2+y^2=1}$] (F) at (axis cs: -.9,.2) {};
+
+\node[label=right:${\sin\theta>0}$] at (axis cs: .75,1.2) {};
+\node[label=right:${\cos\theta>0}$] at (axis cs: .75,1) {};
+
+\node[label=right:${\sin\theta>0}$] at (axis cs: -1.44,1.2) {};
+\node[label=right:${\cos\theta<0}$] at (axis cs: -1.44,1) {};
+
+
+\node[label=right:${\sin\theta<0}$] at (axis cs: .75,-1) {};
+\node[label=right:${\cos\theta>0}$] at (axis cs: .75,-1.2) {};
+
+\node[label=right:${\sin\theta<0}$] at (axis cs: -1.44,-1) {};
+\node[label=right:${\cos\theta<0}$] at (axis cs: -1.44,-1.2) {};
+
+
+\draw[thick] (axis cs: .77,.9) -- (axis cs: .77,1.3) -- (axis cs: 1.4,1.3) -- (axis cs: 1.4,.9) -- cycle;
+\draw[thick] (axis cs: -.77,.9) -- (axis cs: -.77,1.3) -- (axis cs: -1.4,1.3) -- (axis cs: -1.4,.9) -- cycle;
+\draw[thick] (axis cs: -.77,-.9) -- (axis cs: -.77,-1.3) -- (axis cs: -1.4,-1.3) -- (axis cs: -1.4,-.9) -- cycle;
+\draw[thick] (axis cs: .77,-.9) -- (axis cs: .77,-1.3) -- (axis cs: 1.4,-1.3) -- (axis cs: 1.4,-.9) -- cycle;
+
+\end{axis}
+\end{tikzpicture}

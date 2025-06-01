@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+
+\filldraw[blue, fill=white, thick] (0,0) -- (5,0) node[midway,above, black] {$c$} -- (3,3) node[midway,left, black] {$a$}-- cycle node[midway,below, black] {$b$};
+
+%\draw[line width=2pt,blue,-stealth](0,2)--(4,2);
+%\draw[line width=2pt,red,-stealth](0,2)--(2,0) node[midway, below, sloped, black]{$\bvec{F}$};
+
+\node(A) at (0,0) {};
+%\draw [fill=black] (A) circle (2pt);
+\node(B) at (5,0) {};
+%\draw [fill=black] (B) circle (2pt);
+\node(C) at (3,3) {};
+%\draw [fill=black] (C) circle (2pt);
+
+\draw pic[draw,black,"$C$", angle eccentricity=1.5]{angle= A--C--B};
+\draw pic[draw,black,"$B$", angle eccentricity=1.5]{angle= C--B--A};
+\draw pic[draw,black,"$A$", angle eccentricity=1.5]{angle= B--A--C};
+
+\end{tikzpicture}

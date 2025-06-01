@@ -1,0 +1,246 @@
+\documentclass[12 pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[top=0.75in,bottom=0.75in,right=0.75in,left=0.75in]{geometry}
+\usepackage{enumerate}
+\usepackage{mathrsfs}
+\usepackage[all]{xy}
+\usepackage[usenames,dvipsnames,table,xcdraw]{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{esvect}
+\usepackage{vwcol}  
+\usepackage{todonotes}
+\usepackage{etoolbox}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{tikzpeople}
+\usepackage{sidenotes}
+\usepackage{imakeidx}
+\usepackage{pdfpages}
+\usepackage{tabularx}
+
+
+%%%%%%%%%%
+% For TikZ and PGFPlots
+%%%%%%%%%%
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{decorations.markings}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{every axis/.append style={label style={font=\tiny},tick label style={font=\footnotesize}}}
+\usetikzlibrary{angles}
+\usetikzlibrary{quotes}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{shadings}
+
+\setlength{\parindent}{0pt}
+
+
+
+\begin{document}
+\begin{center}
+\textbf{\LARGE Essential Trigonometry for Calculus}
+\end{center}
+\vspace{.25in}
+\pagestyle{empty}
+
+
+\begin{multicols}{2}
+
+
+\section*{Graphs}
+
+
+\input{images/sinegraph}
+
+\vfill
+
+\input{images/cosinegraph}
+\vfill
+
+\input{images/tangraph}
+
+\vfill
+
+
+\section*{SOH--CAH--TOA}
+$\displaystyle \sin\theta =\frac{\text{opposite}}{\text{hypotenuse}}$
+
+\bigskip
+
+$\displaystyle \cos\theta =\frac{\text{adjacent}}{\text{hypotenuse}}$
+
+\bigskip
+
+$\displaystyle \tan\theta =\frac{\text{opposite}}{\text{adjacent}}$
+
+\bigskip
+
+Popular mnemonic: ``Some Old Horse Caught Another Horse Taking Oats Away.''
+
+\vfill
+\null
+\section*{Basic Identities}
+
+
+\begin{multicols}{2}
+$\displaystyle \tan \theta=\frac{\sin \theta}{\cos \theta}$
+
+\bigskip
+
+$\displaystyle\cot \theta=\frac{1}{\tan \theta}=\frac{\cos \theta}{\sin \theta}$
+
+\bigskip
+
+$\sin ^{2} \theta+\cos ^{2} \theta=1$
+
+\bigskip
+\vfill\null
+
+\columnbreak
+$\displaystyle\csc \theta=\frac{1}{\sin \theta}$
+
+\bigskip
+
+$\displaystyle\sec \theta=\frac{1}{\cos \theta}$
+
+\bigskip
+
+\vfill\null
+
+\end{multicols}
+
+\section*{Reference Triangles}
+
+\begin{center}
+\input{images/referencetriangles}
+\end{center}
+
+\section*{Radians and Degrees}
+If $d$ is the measure of an angle in degrees and $r$ is its measure in radians, then $ r=\frac{\pi}{180}d$ and $ d=\frac{180}{\pi}r$.
+
+\begin{center}
+\begin{tabular}{c c}
+Degrees & Radians\\ \hline
+$0^\circ$ & 0\\
+$30^\circ$ & $\frac{\pi}{6}$ \\
+$45^\circ$ & $\frac{\pi}{4}$\\
+$60^\circ$ & $\frac{\pi}{3}$\\
+$90^\circ$ & $\frac{\pi}{2}$\\
+$180^\circ$ & $\pi$\\
+$360^\circ$ & $2\pi$
+\end{tabular}
+\end{center}
+
+
+
+\newpage
+\section*{Trigonometric Identities}
+
+
+$\tan ^{2} \theta+1=\sec ^{2} \theta$\\
+
+$1+\cot ^{2} \theta=\csc ^{2} \theta$\\
+
+$\sin (-\theta)=-\sin \theta$\\
+
+$\cos (-\theta)=\cos \theta$\\
+
+$\tan (-\theta)=-\tan \theta$\\
+
+$\sin (2 \theta) =2 \sin \theta \cos \theta$\\
+
+$\cos (2 \theta) =\cos ^{2} \theta-\sin ^{2} \theta $\\ 
+\text{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}$ =2 \cos ^{2} \theta-1 $\\
+\text{\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,}$=1-2 \sin ^{2} \theta $\\
+
+$\displaystyle \tan (2 \theta) =\frac{2 \tan \theta}{1-\tan ^{2} \theta}$\\
+
+$\sin ^{2} \theta=\frac{1}{2}(1-\cos (2 \theta)) $\\
+
+$\cos ^{2} \theta=\frac{1}{2}(1+\cos (2 \theta)) $\\
+
+$\displaystyle \tan ^{2} \theta=\frac{1-\cos (2 \theta)}{1+\cos (2 \theta)}$\\
+
+$\sin \alpha \sin \beta=\frac{1}{2}(\cos (\alpha-\beta)-\cos (\alpha+\beta)) $\\
+
+$\cos \alpha \cos \beta=\frac{1}{2}(\cos (\alpha-\beta)+\cos (\alpha+\beta)) $\\
+
+$\sin \alpha \cos \beta=\frac{1}{2}(\sin (\alpha+\beta)+\sin (\alpha-\beta))$\\
+
+
+$\sin (\alpha \pm \beta)=\sin \alpha \cos \beta \pm \cos \alpha \sin \beta$\\
+
+$\cos (\alpha \pm \beta)=\cos \alpha \cos \beta \mp \sin \alpha \sin \beta$\\
+
+%$\displaystyle\tan (\alpha \pm \beta)=\frac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan \beta}$\\
+
+
+\begin{center}
+\input{images/lawofcosines}
+%\includegraphics[width=0.77\columnwidth]{triangle.pdf}\\
+\end{center}
+
+\textbf{Law of sines:} $\displaystyle\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}$\\
+
+\textbf{Law of cosines:} $c^2=a^2+b^2-2ab\cos C$
+
+\section*{Trigonometric Limits}
+
+$\displaystyle \lim_{x\to 0}\frac{\sin x}{x}=1$\\
+
+$\displaystyle \lim_{x\to 0}\frac{\cos x-1}{x}=0$\\
+
+\section*{Trigonometric Derivatives}
+\noindent $\displaystyle \frac{d(\sin x)}{dx}=\cos x$\\
+
+\noindent $\displaystyle \frac{d(\cos x)}{dx}=-\sin x$\\
+
+\noindent $\displaystyle \frac{d(\tan x)}{dx}=\sec^2 x$\\ 
+
+\noindent $\displaystyle \frac{d(\sec x)}{dx}=\sec x\tan x$\\
+
+\noindent $\displaystyle \frac{d(\csc x)}{dx}=-\csc x\cot x$\\
+
+\noindent $\displaystyle \frac{d(\cot x)}{dx}=-\csc^2 x$
+
+\noindent $\displaystyle\frac{d}{d x}\left(\sin ^{-1} x\right) =\frac{1}{\sqrt{1-x^{2}}}$
+
+\noindent $\displaystyle\frac{d}{d x}\left(\cos ^{-1} x\right) =-\frac{1}{\sqrt{1-x^{2}}}$
+
+\noindent $\displaystyle\frac{d}{d x}\left(\tan ^{-1} x\right) =\frac{1}{1+x^{2}}$
+
+\section*{Trigonometric Integrals}
+\noindent $\displaystyle \int\sin x\,dx =-\cos x+C$\\
+
+\noindent $\displaystyle \int\cos x\,dx =\sin x+C$\\
+
+\noindent $\displaystyle \int\sec^2x\,dx =\tan x+C$\\
+
+\noindent $\displaystyle \int\sec x\tan x\,dx =\sec x+C$\\
+
+\noindent $\displaystyle \int\csc x\cot x\,dx =-\csc x+C$\\
+
+\noindent $\displaystyle \int\csc^2x\,dx =-\cot x+C$\\
+\end{multicols}
+
+
+\newpage
+\section*{The Unit Circle}
+\begin{center}
+\input{images/unitcircletrig2}
+\resizebox{5.75in}{!}{
+\input{images/unitcircletrig}
+}
+\end{center}
+
+
+\end{document}
+
+
