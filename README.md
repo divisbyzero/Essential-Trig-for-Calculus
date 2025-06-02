@@ -1,5 +1,8 @@
 # Essential Trigonometry for Calculus
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Latest Release](https://img.shields.io/github/v/release/divisbyzero/EssentialTrigForCalculus)](https://github.com/divisbyzero/EssentialTrigForCalculus/releases/latest)
+
 A quick-reference trigonometry guide for calculus students. Created using LaTeX and TikZ.
 
 ## Files
