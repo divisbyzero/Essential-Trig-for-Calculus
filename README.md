@@ -1,11 +1,11 @@
 # Essential Trigonometry for Calculus
 
-A quick-reference trigonometry guide for calculus students, created using LaTeX and TikZ.
+A quick-reference trigonometry guide for calculus students. Created using LaTeX and TikZ.
 
 ## Files
 
 - `EssentialTrigForCalculus.tex`: The LaTeX source code  
-- `EssentialTrigForCalculus.pdf`: Precompiled PDF for easy viewing  
+- `EssentialTrigForCalculus.pdf`: Precompiled PDF  
 - `images/`: Folder containing supporting image files (e.g., PNG previews, TikZ-generated figures)  
 
 ## Preview
